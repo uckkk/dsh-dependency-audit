@@ -1,0 +1,40 @@
+{
+  "name": "dsh-dependency-audit",
+  "version": "0.1.0",
+  "description": "依赖安全审计：扫描项目依赖的已知漏洞（OSV.dev）并检测过期依赖（npm registry），返回漏洞严重级/修复版本与升级幅度",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/index.js",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "security",
+    "vulnerability",
+    "osv",
+    "audit",
+    "依赖",
+    "漏洞"
+  ],
+  "author": "istone <ad571@qq.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/dsh-tools": ">=0.1.0-rc.6"
+  }
+}
