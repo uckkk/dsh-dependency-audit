@@ -1,0 +1,4 @@
+# 依赖安全审计（dsh-dependency-audit）bundle patch：作为 profile 的一层 patch，插入本插件的加载行。
+- insert:
+    - id: dependency-audit
+      name: 'dsh-dependency-audit'
